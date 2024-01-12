@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="assets/css/uStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    /* Basic styling for the homepage */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+   /* header {
+      background-color: #80ACC9;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }*/
+    nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+      text-align: left;
+    }
+    footer {
+      background-color: #80ACC9;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    form {
+        max-width: 600px;
+        margin: left;
+        padding: 20px;
+    }
+    label input {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        background-color: #dde9f3;
+    }
+    .button-group {
+        display: flex;
+    }
+    .button-group button {
+        flex: 1;
+        margin-right: 100px; /*add spacing between space */
+        margin-top: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #386C50;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+
+    /* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%; /*Position from the top*/
+  left: 50%; /*Position from the left*/
+  transform: translate(-50%, -50%); /*Centering*/
+  border: 3px solid #f4f4f4;
+  border-radius: 45px;
+  z-index: 9;
+}
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 80px;
+  background-color: #dde9f3;
+  border-radius: 45px;
+  text-align: center;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: fit-content;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #386C50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(110, 128, 98);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 5;
+}
+.button-form {
+  background-color: #80ACC9;
+  color: black;
+}
+
+/*Design for dropdown menu*/
+.image-container {
+  position: absolute;
+  top: 10px; /* Adjust top position */
+  right: 10px; /* Adjust right position */
+}
+.image-container img {
+  width: 70px; /* Set the width of your image */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer; /* Add cursor pointer for interaction */
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 100%; /* Align dropdown below the parent */
+  right: 0; /* Adjust to align with the right side */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #386C50;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+
+</style>
+</head>
+<body style="background-color:white;">
+
+
+  </style>
+</head>
+<body>
+
+ <!-- navbar -->
+ <nav class="navbar navbar-expand-md navbar-light pt-1 pb-1 bg-info">
+  <div class="container-xxl">
+  <!-- navbar brand / title -->
+  <a class="navbar-brand" href="uAdoptPage.html">
+      <span class="text-secondary fw-bold text-dark" >
+      MeoWoof
+      </span>
+      
+      <span>
+          <img src="assets/image/MeoWoof.png" alt="Logos" style="width:10%" margin="0%">
+      </span>
+
+  </a>
+  <!-- toggle button for mobile nav -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- navbar links -->
+  <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+      <ul class="navbar-nav">
+      <li class="nav-item">
+          <a class="nav-link" href="uAdoptPage.html">Pet Adoption</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="uMissingB.html">Missing Board</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="uCustService.html">Support</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="uAboutUs.html">About Us</a>
+      </li>
+      <li class="nav-item">
+       <a class="btn btn-secondary" onclick="confirmLogout()">Logout</a>
+
+          <!-- Perlu  buat popup jak sini utk login/logout-->
+      </li>
+      <!--  <li class="nav-item">
+                    <a class="btn btn-secondary" href="#">Logout</a>
+                </li> -->
+
+      </ul>
+  </div>
+  </div>
+</nav>
+<!--DONE Navigation Bar Part-->
+
+  <header>
+ <!--       <nav>
+        <ul>
+            <li><a href="userpetadoption.html">Pet Adoption</a></li>
+            <li><a href="usercommunitysos.html">Community SOS</a></li>
+            <li><a href="usercustomerservice.html">Customer Service</a></li>
+        </ul>
+        <div class="image-container">
+          <img src="profilepic.png" alt="Dropdown" onclick="toggleDropdown()" />
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">Edit Profile</a>
+            <a href="#">Log Out</a>
+          </div>
+        </div>
+        </nav>--> 
+
+  </header>
+
+  <main>
+    <h3>profile pic & name</h3>
+    <form id="usereditform" action="userprofile.php" method="post">
+    
+      <br><label for="firstname">First Name</label><br>
+      <input type="text" id="firstname" name="firstname" value="<?php echo isset($retrievedFirstName) ? $retrievedFirstName : ''; ?>" required><br>
+      
+      <br><label for="lastname">Last Name</label><br>
+      <input type="text" id="lastname" name="lastname" value="<?php echo isset($retrievedLastName) ? $retrievedLastName : ''; ?>" required><br>
+      
+      <br><label for="username">Username</label><br>
+      <input type="text" id="username" name="username" value="<?php echo isset($retrievedUsername) ? $retrievedUsername : ''; ?>" required><br>
+  
+      <br><label for="phoneNo">Phone Number</label><br>
+      <input type="text" id="phoneNo" name="phoneNo" value="<?php echo isset($retrievedPhoneNo) ? $retrievedPhoneNo : ''; ?>" required><br>
+  
+      <br><label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" value="<?php echo isset($retrievedEmail) ? $retrievedEmail : ''; ?>" required><br>
+      
+      <br><label for="location">Location</label><br>
+      <input type="text" id="location" name="location" value="<?php echo isset($retrievedLocation) ? $retrievedLocation : ''; ?>" required><br>
+      
+      <br><div class="button-group">
+      <button type="submit">Save changes</button><br>
+      <button type="button" id="canceleditButton">Cancel</button><br>
+      </div></br>
+      </form>
+
+    <button class="open-button button-form" onclick="openForm()">Do you want to reset Password?</button>
+    <div class="form-popup" id="myForm">
+      <form onsubmit="handleSubmit(event)" class="form-container">
+        <h2>Reset Password</h2>
+
+        <label for="currentPassword"><b>Current Password</b></label><br>
+        <input type="password" id="currentPasswordForm" placeholder="Enter Current Password" name="currentPassword" required><br>
+
+        <label for="newPassword"><b>New Password</b></label><br>
+        <input type="password" id="newPasswordForm" placeholder="Enter New Password" name="newPassword" required><br>
+
+        <label for="confirmPassword"><b>Confirm Password</b></label><br>
+        <input type="password" id="confirmPasswordForm" placeholder="Confirm New Password" name="confirmPassword" required><br>
+
+        <button type="submit" id="btnSave">Save</button>
+        <button type="button" id="btnCancel" onclick="closeForm()">Cancel</button>
+      </form>
+    </div>
+
+    <script src="userprofile.js"></script>
+    
+  </main>
+
+  <!--<footer>
+    <p>&copy; 2023 MeoWoof. All rights reserved.</p>
+  </footer> -->
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MeoWoof</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Website</title>
+  <link rel="stylesheet" href="assets/css/admin-missingboard.css" />
+</head>
+
+<body>
+  <div class="top-navbar">
+    <button class="toggle-slider" onclick="toggleSidebar()">☰</button>
+    <div class="admin-info" onclick="toggleLogoutBox()">
+      <img src="assets/images/admin_profile.jpg" class="admin-icon" alt="Admin Icon">
+      <span class="admin-name">Kylian Mbappe</span>
+    </div>
+  </div>
+
+  <div class="logout-box" id="logoutBox">
+    <button class="logout-button" onclick="logout()">Log Out</button>
+  </div>
+
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="assets/images/Logo.png" class="sidebar-logo" alt="Logo">
+        <span class="sidebar-title">MeoWoof Admin</span>
+      </div>
+    <a href="Admin-Dashboard.html" class="sidebar-link"><img src="assets/images/dashboard_icon.png" class="sidebar-icon" alt="Dashboard Icon">
+      <span class="sidebar-link-text">Dashboard</span></a>
+    <a href="Admin-PetsInventory.php" class="sidebar-link"><img src="assets/images/inventory_icon.png" class="sidebar-icon" alt="Pets Inventory Icon">
+      <span class="sidebar-link-text">Pets Inventory</span></a>
+    <a href="#" class="sidebar-link current"><img src="assets/images/MissingBoard_icon.png" class="sidebar-icon" alt="Missing Board Icon">
+      <span class="sidebar-link-text">Missing Board</span></a>
+    <a href="Admin-CustomerQ.html" class="sidebar-link"><img src="assets/images/MissingQ_icon.png" class="sidebar-icon" alt="Missing In Q Icon">
+      <span class="sidebar-link-text">Missing In Q</span></a>
+  </div>
+
+
+  <div class="content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search here...">
+      <div class="search-button-container">
+      <button type="button" class="search-button"><img src="assets/images/search_icon.png" alt="Search Icon"></button>
+      </div>
+    </div>
+
+        <div class="box-table">
+          <div class="box">
+            <img src="assets/images/admin_profile.jpg" alt="Image 1">
+            <div class="textmage">
+                <div class="text"> Name1 <img class="left" src="assets/images/Edit.png" alt="Icon">
+                <img class="right" src="assets/images/Delete.png">
+                </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="assets/images/admin_profile.jpg" alt="Image 2">
+            <div class="textmage">
+                <div class="text"> Name2 <img class="left" src="assets/images/Edit.png" alt="Icon">
+                <img class="right" src="assets/images/Delete.png">
+                </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="assets/images/admin_profile.jpg" alt="Image 3">
+            <div class="textmage">
+                <div class="text"> Name3 <img class="left" src="assets/images/Edit.png" alt="Icon">
+                <img class="right" src="assets/images/Delete.png">
+                </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="assets/images/admin_profile.jpg" alt="Image 4">
+            <div class="textmage">
+                <div class="text"> Name4 <img class="left" src="assets/images/Edit.png" alt="Icon">
+                <img class="right" src="assets/images/Delete.png">
+                </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="assets/images/admin_profile.jpg" alt="Image 5">
+            <div class="textmage">
+                <div class="text"> Name5 <img class="left" src="assets/images/Edit.png" alt="Icon">
+                <img class="right" src="assets/images/Delete.png">
+                </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="assets/images/admin_profile.jpg" alt="Image 6">
+            <div class="textmage">
+                <div class="text"> Name6 <img class="left" src="assets/images/Edit.png" alt="Icon">
+                <img class="right" src="assets/images/Delete.png">
+                </div>
+            </div>
+          </div>
+          <!-- Repeat the structure for additional rows -->
+        </div>
+
+            <div class="bottom-buttons">
+      <a href="#" class="navigation-button1">1</a>
+      <a href="#" class="navigation-button2">2</a>
+      <a href="#" class="navigation-button">></a>
+    </div>
+  </div>
+
+      <script src="assets/js/admin-script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MeoWoof</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/admin-customerq.css" />
+</head>
+
+<body>
+  <div class="top-navbar">
+    <button class="toggle-slider" onclick="toggleSidebar()">☰</button>
+    <div class="admin-info" onclick="toggleLogoutBox()">
+      <img src="assets/images/admin_profile.jpg" class="admin-icon" alt="Admin Icon">
+      <span class="admin-name">Kylian Mbappe</span>
+    </div>
+  </div>
+
+  <div class="logout-box" id="logoutBox">
+    <button class="logout-button" onclick="logout()">Log Out</button>
+  </div>
+
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="assets/images/Logo.png" class="sidebar-logo" alt="Logo">
+        <span class="sidebar-title">MeoWoof Admin</span>
+      </div>
+    <a href="Admin-Dashboard.html" class="sidebar-link"><img src="assets/images/dashboard_icon.png" class="sidebar-icon" alt="Dashboard Icon">
+      <span class="sidebar-link-text">Dashboard</span></a>
+    <a href="Admin-PetsInventory.php" class="sidebar-link"><img src="assets/images/inventory_icon.png" class="sidebar-icon" alt="Pets Inventory Icon">
+      <span class="sidebar-link-text">Pets Inventory</span></a>
+    <a href="Admin-MissingBoard.html" class="sidebar-link"><img src="assets/images/MissingBoard_icon.png" class="sidebar-icon" alt="Missing Board Icon">
+      <span class="sidebar-link-text">Missing Board</span></a>
+    <a href="#" class="sidebar-link current"><img src="assets/images/MissingQ_icon.png" class="sidebar-icon" alt="Missing In Q Icon">
+      <span class="sidebar-link-text">Missing In Q</span></a>
+  </div>
+
+
+  <div class="content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search here...">
+      <div class="search-button-container">
+      <button type="button" class="search-button"><img src="assets/images/search_icon.png" alt="Search Icon"></button>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+        <button class="all-button">All</button>
+        <button class="review-button">Under Review</button>
+        <button class="approve-button">Approved</button>
+        <button class="reject-button">Rejected</button>
+      </div>
+
+    <ul class="customerQ-table">
+        <li class="table-header">
+          <div class="data-1">User ID</div>
+          <div class="data-2">Username</div>
+          <div class="data-3">Reference No</div>
+          <div class="data-4">Date of Application</div>
+          <div class="data-5">Status</div>
+        </li>
+        <li class="table-data">
+          <div class="data-1">42235</div>
+          <div class="data-2">Aoi Todo</div>
+          <div class="data-3">124365978452</div>
+          <div class="data-4">12/30/2023</div>
+          <div class="data-5">Approved</div>
+          
+        </li>
+        <li class="table-data">
+          <div class="data-1">42442</div>
+          <div class="data-2">Yuji Itadori</div>
+          <div class="data-3">132649785243</div>
+          <div class="data-4">18/30/2023</div>
+          <div class="data-5">Rejected</div>
+        </li>
+        <li class="table-data">
+          <div class="data-1">42257</div>
+          <div class="data-2">Rengoku Kyojuro</div>
+          <div class="data-3">178465213422</div>
+          <div class="data-4">11/30/2023</div>
+          <div class="data-5">Under Review</div>
+        </li>
+        <li class="table-data">
+          <div class="data-1">42311</div>
+          <div class="data-2">Tengen Uzui</div>
+          <div class="data-3">133462297542</div>
+          <div class="data-4">15/30/2023</div>
+          <div class="data-5">Approved</div>
+        </li>
+      </ul>
+
+      <div class="bottom-buttons">
+        <a href="#" class="navigation-button1">1</a>
+        <a href="#" class="navigation-button2">2</a>
+        <a href="#" class="navigation-button">></a>
+      </div>
+
+      <script src="assets/js/admin-script.js"></script>
+    </div>
+  </body>
+</html>
